@@ -1,81 +1,172 @@
 body{
- margin: 0;
- padding: 0;
- background-color: #c37927;
+	margin: 0;
+	padding: 0;
+	background-color: #EAEAEA;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
 }
-main, .container-fluid{
+.spacing{
 	max-width: 75vw;
 }
+
+nav{
+	opacity: 0.88;
+	height: 10vh;
+	min-height: 3.8em;
+	background-color: transparent;
+	font-size: 1.25em;
+}
+
+.brand{
+	font-family: 'Charmonman', cursive;
+	font-size: 2.2em;
+	font-weight: bold;
+	text-shadow: 8px 5px 6px rgba(0,0,0,0.38);
+	padding-top: 12px;
+}
+.drop_menu{
+	background-color: transparent;
+	margin-top: 5px;
+	padding-left: 10%;
+	border-radius: 5px;
+}
+
 .hero{
-	background-image: url("matty.jpg");
+	background-image: url("matty5.jpg");
 	background-color: #000000;
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
 	width: 100%;
-	border-bottom-right-radius: 675px;
 }
-/*.over_hero{
-	background-color: #2B2B2B; 
-	height: 65vh;
-	max-width: 75vw;
-	opacity: 0.68;
-}*/
 .hero_text{
-	margin-top: 35vh;
-	max-width: 500px;
-	text-shadow: 8px 5px 5px rgba(0,0,0,0.65);
+	margin-top: 25vh;
+	max-width: 580px;
+	text-shadow: 2px 1px 2px rgba(0,0,0,0.5);
 }
 .hero_title{
-	font-size: 2.8em;
+	font-size: 3.5em;
+	letter-spacing: 4px;
+	font-weight: bold;
+	color: #303030;
 
 }
 .hero_body{
-	font-size: 1.3em;
+	font-size: 1.6em;
+	font-weight: ;
+	text-shadow: 2px 1px 4px rgba(0,0,0,0.8);
+	color: #C8C8C8;
 }
 
+.main_button{
+		opacity: 0.88;
+		font-size: 1.2em;
+		border: 1px solid black;
+		background-color: rgba(92, 19, 17,0.98);
+		transition: background-color 0.2s;
+	}
+
 @media only screen and (max-width: 991px) {
+	nav .navbar-nav li a{
+  		color: #C8C8C8 !important;
+  		font-size: 1.2em;
+  	}
+  	nav .navbar-nav li a:hover{
+		color: #7C1C19 !important;
+  	}
+  	.actived{
+		color: #7C1C19 !important;
+  	}
+	.drop_menu{
+		background-color: #202020;
+		color: black;
+		margin-top: 5px;
+		padding-left: 10%;
+		border-radius: 5px;
+	}
+	.brand{
+		font-size: 1.8em;
+	}
 	.hero_text{
-		margin-top: 8vh;
-		max-width: 500px;
-		text-shadow: 10px, 4px, 3px, rgba(0,0,0,0.8);
+		margin-top: 16vh;
+		max-width: 450px;
+		text-shadow: 2px, 3px, 2px, rgba(0,0,0,0.8);
+	}
+	.hero_title{
+		color: #303030;
+	}
+	.hero_body{
+		color: #C8C8C8;
+		font-weight: normal;
 	}
 	.hero{
-		background-image: url("matty3.jpg");
+		background-image: url("matty6.jpg");
 		background-size: cover;
 		background-position: center;
 		height: 100vh;
 		width: 100%;
 
 	}
+	.line_title{
+		width: 65vw; 
+		border-top: 2.5px solid white;
+		color: white;
+	}
+	
 	.main_button{
+		margin-top: 50px;
 		opacity: 0.88;
-		margin-top: 188px;
-		background-color: rgba(40, 40, 40, 0.8);
+		border: 1px solid #FFFFFF;
+		background-color: rgba(92, 19, 17,0.98);
 	}
 }
-nav{
-	opacity: 0.88;
-	height: 10vh;
-	background-color: #c37927;
-	font-size: 1.25em;
+
+@media only screen and (max-width: 450px) {
+	.hero_title{
+		font-size: 2.5em;
+	}
+	.hero_body{
+		font-size: 1.3em;
+
+	}
 }
-.drop_menu{
-	background-color: #c37927;
-	margin-top: 5px;
-	padding-left: 10%;
-	border-radius: 5px;
-}
+/*---------------------------------------*/
 
 .sec1{
-	width: 100%;
-	height: 450px;
-	background: rgb(25,25,25);
-background: linear-gradient(55deg, rgba(25,25,25,1) 15%, rgba(195,121,39,1) 56%);
+	padding-top: 100px;
+	height: 100%;
+	overflow: hidden;
+	height: 100%;
+	margin-bottom: 100px;
 }
 
 .section_body{
 	max-width: 75vw;
 	padding-top: 30px;
+}
+a, a:link, a:visited{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	color: #7C1C19;
+}
 
+/*---------------------------------------*/
+
+footer{
+	background-color: #131313;
+}
+.footer_body{
+	background-color: rgb(92, 19, 17);
+	max-width: 100%;
+}
+.footer_lines{
+	width: 60px; 
+	background-color: #FF0000; 
+	height: 2px;
+}
+.footer_bottom{
+	background-color: #0B0B0B;
 }
