@@ -33,7 +33,7 @@ nav{
 }
 
 .hero{
-	background-image: url("matty5.jpg");
+	background-image: url("Matty5.jpg");
 	background-color: #000000;
 	background-size: cover;
 	background-position: center;
@@ -101,7 +101,7 @@ nav{
 		font-weight: normal;
 	}
 	.hero{
-		background-image: url("matty6.jpg");
+		background-image: url("Matty6.jpg");
 		background-size: cover;
 		background-position: center;
 		height: 100vh;
